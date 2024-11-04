@@ -21,3 +21,5 @@ go get -u github.com/gorilla/websocket
 - Step 3: Install required dependencies by running `npm install` command
 - Step 4: Run the client by running `npm start` command
 - Note: Your server will be running on `http://localhost:3000/`
+
+![Screenshot 2024-11-04 at 9 40 00 AM](https://github.com/user-attachments/assets/3645e4e3-d6ba-42b9-9bab-30a577f4cd0c)
