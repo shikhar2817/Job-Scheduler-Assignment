@@ -138,6 +138,11 @@ func jobScheduler() {
 			jobsMutex.Unlock()
 
 			go func(j *Job) {
+				jobsMutex.Lock()
+				j.Status = "running"
+				jobsMutex.Unlock()
+				broadcastJobUpdate()
+
 				time.Sleep(j.Duration)
 				jobsMutex.Lock()
 				j.Status = "completed"
